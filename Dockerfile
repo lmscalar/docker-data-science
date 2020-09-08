@@ -19,6 +19,9 @@ ENV PATH /root/anaconda3/bin:$PATH
 RUN conda update conda
 RUN conda update anaconda
 RUN conda update --all
+RUN conda install pandas-datareader
+RUN pip install QuantLib-Python
+RUN conda instal mibian
 
 # Configuring access to Jupyter
 RUN mkdir /opt/notebooks
